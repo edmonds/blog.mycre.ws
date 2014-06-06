@@ -60,6 +60,8 @@ Fortunately, few users should be affected by this bug, since GCC 4.9 is fairly
 new. (The upcoming [Fedora 21 release] will probably be the first mainstream
 distribution to ship with GCC 4.9 as the default compiler.)
 
+**Update**: Debian bug [#750760] filed.
+
 [operational notification]: https://kb.isc.org/article/AA-01167
 [GCC documentation]:        https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
 [dates back to 1999]:       http://www.gnu.org/software/gcc/news/null.html
@@ -67,3 +69,4 @@ distribution to ship with GCC 4.9 as the default compiler.)
 [Glibc optimization]:       http://lwn.net/Articles/414467/
 [including bind]:           https://kb.isc.org/article/AA-01085
 [Fedora 21 release]:        http://fedoraproject.org/wiki/Releases/21/ChangeSet#GCC49
+[#750760]:                  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=750760
