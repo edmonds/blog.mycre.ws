@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% set title = article.title %}
+
+{% block content %}
+<section itemscope itemtype="http://schema.org/Article">
+  <header>
+    <h2 itemprop="name">{{ article.title }}</h2>
+    <p>
+      <strong>
+        <div itemprop="description">{{ article.summary|striptags }}</div>
+      </strong>
+    </p>
+  </header>
+
+  <div itemprop="articleBody">
+{{ article.content }}
+  </div>
+
+  <div>
+    <i>
+      Written by 
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">{{ AUTHOR }}</span>
+      </span>
+      on
+      <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.date.strftime("%Y-%m-%d") }}</time>.
+    </i>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% set title = SITENAME %}
+
+{% block content %}
+  <header>
+    <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+  </header>
+
+  <section>
+
+  <ul>
+  {% for article in articles_page.object_list %}
+    <li><article>
+      <div><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></div>
+      <div>({{ article.date.strftime("%Y-%m-%d") }})</div>
+      <div>{{ article.summary }}</div>
+    </article></li>
+  {% endfor %}
+  </ul>
+
+  </section>
+{% endblock content %}
