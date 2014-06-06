@@ -11,7 +11,4 @@ html:
 	@$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 	@echo "blog.mycre.ws" > $(OUTPUTDIR)/CNAME
 
-clean:
-	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
-
 .PHONY: html clean

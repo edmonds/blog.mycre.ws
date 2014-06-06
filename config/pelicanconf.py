@@ -14,7 +14,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 RELATIVE_URLS = True
-DELETE_OUTPUT_DIRECTORY = True
+DELETE_OUTPUT_DIRECTORY = False
 
 ARTICLE_URL = 'articles/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{slug}/index.html'
