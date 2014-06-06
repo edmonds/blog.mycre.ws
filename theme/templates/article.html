@@ -21,6 +21,9 @@
       Written by 
       <span itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="name">{{ AUTHOR }}</span>
+        {% if EMAIL %}
+        &lt;<a href="mailto:{{ EMAIL }}" itemprop="email">{{ EMAIL }}</a>&gt;
+        {% endif %}
       </span>
       on
       <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.date.strftime("%Y-%m-%d") }}</time>.
