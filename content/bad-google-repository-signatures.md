@@ -2,6 +2,12 @@ Title: Bad Google repository signatures
 Date: 2015-03-22T03:50:57Z
 Summary: Google's package repositories occasionally return inconsistent data, causing validation failures.
 
+**Update**: _I was able to get in touch with the Googlers responsible for the
+[dl.google.com service], and the root cause for the mismatched signature problem
+described below has been found and fixed. I now consistently receive from
+Google's servers `Release` and `Release.gpg` files that pass apt's signature
+validation on my home connection._
+
 Google publishes [Linux software repositories] for several of their products,
 including Google Chrome, which is available from the following apt source:
 
@@ -259,6 +265,7 @@ It would be nice if Google could fix the underlying bug in their infrastructure
 that results in mis-signed repositories being published frequently, because it
 trains users to ignore cryptographic failures.
 
+[dl.google.com service]: http://talks.golang.org/2013/oscon-dl.slide
 [Linux software repositories]: https://www.google.com/linuxrepositories/
 [aggressively retired]: http://googleonlinesecurity.blogspot.com/2013/11/out-with-old-stronger-certificates-with.html
 [archive keys]: https://ftp-master.debian.org/keys.html
