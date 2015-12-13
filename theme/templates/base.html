@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ DEFAULT_LANG }}">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   {% block head %}
   <title>{{ title }}</title>
   <meta charset="utf-8" />
@@ -10,8 +11,9 @@
   {% endblock head %}
   <style>
     body {
-      width: 40em;
+      max-width: 40em;
       display: block;
+      margin: 0 auto;
     }
     code {
       background-color: lightgray;
