@@ -23,6 +23,7 @@ DELETE_OUTPUT_DIRECTORY = False
 
 ARTICLE_URL = 'articles/{slug}/'
 ARTICLE_SAVE_AS = 'articles/{slug}/index.html'
+STATIC_PATHS = ['images']
 
 AUTHOR_SAVE_AS = False
 CATEGORY_SAVE_AS = False
